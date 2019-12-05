@@ -1,11 +1,6 @@
-body {
-    height: 100vh;
-    min-height: 100vh;
-}
-
 .center {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-content: center;
     flex-flow: column wrap;
 }
