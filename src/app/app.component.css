@@ -1,0 +1,11 @@
+body {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+}

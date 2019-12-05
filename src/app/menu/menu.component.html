@@ -1,0 +1,30 @@
+<mat-card class="menuCard">
+    <mat-card-title class="menuTitle">
+        Welcome to ChatApp - best way for chating!
+    </mat-card-title>
+    <mat-card-content>
+        <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">
+            Menu
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="subMenu">
+                <mat-icon>play_arrow</mat-icon>
+                <span>Start here</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>settings</mat-icon>
+                <span>Settings</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>help</mat-icon>
+                <span>Help</span>
+            </button>
+        </mat-menu>
+
+        <mat-menu #subMenu="matMenu">
+            <button mat-menu-item>Log in</button>
+            <button mat-menu-item>Sign in</button>
+        </mat-menu>
+
+    </mat-card-content>
+</mat-card>
