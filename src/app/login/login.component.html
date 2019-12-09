@@ -1,23 +1,22 @@
 <h2 mat-dialog-title>Login</h2>
 <mat-dialog-content>
-<mat-form-field>
+    <mat-form-field>
         <input matInput [(ngModel)]="name" placeholder="Name" required>
-      </mat-form-field>
-      <br>
-      <mat-form-field>
-            <input matInput [(ngModel)]="surname" placeholder="Surname" required>
-          </mat-form-field>
-          <br>
-          <mat-form-field class="example-full-width">
-                <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
-              </mat-form-field>
-              <p>*all fields are required</p>
-              </mat-dialog-content>
-              <mat-dialog-actions>
-                    <button mat-button (click)="login">Login</button>
-                    <button mat-button mat-dialog-close>Cancel</button>
-                  
-                </mat-dialog-actions>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput [(ngModel)]="surname" placeholder="Surname" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+    </mat-form-field>
+    <p>*all fields are required</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="login">Login</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
 
 <!-- <mat-dialog-content>
     <table>
