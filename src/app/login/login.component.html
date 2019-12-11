@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>Login</h2>
+<h2 mat-dialog-title>Log in</h2>
 <mat-dialog-content>
     <mat-form-field>
         <input matInput [(ngModel)]="name" placeholder="Name" required>
@@ -14,38 +14,6 @@
     <p>*all fields are required</p>
 </mat-dialog-content>
 <mat-dialog-actions>
-    <button mat-button (click)="login">Login</button>
+    <button mat-raised-button (click)="login">Log in</button>
     <button mat-button mat-dialog-close>Cancel</button>
 </mat-dialog-actions>
-
-<!-- <mat-dialog-content>
-    <table>
-        <tr>
-            <td>
-                <mat-form-field>
-                    <input matInput [(ngModel)]="name" placeholder="Name">
-                </mat-form-field>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <mat-form-field>
-                    <input matInput [(ngModel)]="surname" placeholder="Surname">
-                </mat-form-field>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password">
-                </mat-form-field>
-            </td>
-        </tr>
-        <p>*all fields are required</p>
-    </table>
-</mat-dialog-content>
-<mat-dialog-actions>
-    <button mat-button (click)="login">Login</button>
-    <button mat-button mat-dialog-close>Cancel</button>
-  
-</mat-dialog-actions> -->

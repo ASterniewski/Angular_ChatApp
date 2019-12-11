@@ -9,14 +9,13 @@ import { LoginComponent } from '../login/login.component';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) {}
-  
+  constructor(public dialog: MatDialog) { }
+
   ngOnInit() {
   }
 
   openDialog(): void {
     let dialogRef = this.dialog.open(LoginComponent, {
-
     });
 
     dialogRef.afterClosed().subscribe(result => {

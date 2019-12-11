@@ -14,7 +14,6 @@ constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
     let dialogRef = this.dialog.open(LoginComponent, {
-
     });
 
     dialogRef.afterClosed().subscribe(result => {
