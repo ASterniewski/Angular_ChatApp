@@ -8,17 +8,14 @@ import { LoginComponent } from './login/login.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'chat';
 
-constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) { }
 
   openDialog(): void {
     let dialogRef = this.dialog.open(LoginComponent, {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      console.log(result);
     });
   }
 }
