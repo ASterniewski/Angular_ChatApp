@@ -20,8 +20,9 @@ export class LoginComponent implements OnInit {
   }
 
 login() : void {
-  if(this.name === 'Andrzej' && this.surname === 'Sterniewski' && this.password === '1234') {
-    alert("Correct data, you're logged in");
+  if(this.name === 'Andrzej' && this.surname === 'S' && this.password === '1234') {
+    // alert("Correct data, you're logged in");
+    this.dialogRef.close(alert(`Welcome back ${this.name}!`));
   } else {
     alert("Wrong data. Try again.");
   }
